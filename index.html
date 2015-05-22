@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title> Simple Library </title>
+		<!-- <link rel="stylesheet" type="text/css" href="style.css" /> -->
+	</head>
+	<body>
+		<h1>Welcome to Your Library</h1>
+		<p> This is a light-weight library app that allows you to add books, shelves and collections, as well as delete and edit.</p>
+		
+		<ul style="list-style: none" id="collection">
+			<ul style="list-style: none" id="shelf">
+				<ul style="list-style: none" id="book">
+				</ul>
+			</ul>
+		</ul>
+		<p>Enter your new collection, shelf or book (title and author) in the field, and select which type of item is being entered.</p>
+		<input type="text" id="new-item" style="width: 250px;" placeholder="Enter the name of your library"/>
+		<select id="selectItem">
+			<option value="optionCollection" >Collection</option>
+			<option value="optionShelf">Shelf</option>
+			<option value="optionBook" selected>Book</option>
+		</select>
+		<button id="addItemButton">Add Item</button>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="require.js"> </script>
+		<script src="scripts.js"> </script>
+	</body>
+</html>
